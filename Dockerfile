@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     libicu-dev \
     libonig-dev \
-    && docker-php-ext-install pdo_mysql zip mbstring exif pcntl bcmath gd intl
+    && docker-php-ext-install pdo_mysql zip mbstring exif pcntl bcmath gd intl calendar
 
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
